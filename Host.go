@@ -11,8 +11,12 @@ func indexhandler(w http.ResponseWriter, r *http.Request) {
 func indesName(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hus Lae Yi Hnin")
 }
+func mamaHnin(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hnin Thu Aung")
+}
 func main() {
 	http.HandleFunc("/", indexhandler)
 	http.HandleFunc("/name/", indesName)
-	http.ListenAndServe(":8001", nil)
+	http.HandleFunc("/hnin", mamaHnin)
+	http.ListenAndServe(":8002", nil)
 }
