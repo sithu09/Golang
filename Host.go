@@ -6,7 +6,7 @@ import (
 )
 
 func indexhandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Fucking CDE! I Showing My Penic.Can See?")
+	fmt.Fprintf(w, "Fucking AungThu! Showing My Penic.Can See?")
 }
 func indesName(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hus Lae Yi Hnin")
